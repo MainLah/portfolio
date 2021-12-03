@@ -16,6 +16,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- Script typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <title>Rendra Kusuma</title>
   </head>
   <body>
@@ -47,7 +50,7 @@
                 <a class="nav-link" href="#projects">My projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact me</a>
+                <a class="nav-link" href="#contact">Contact me</a>
               </li>
             </ul>
           </div>
@@ -58,7 +61,7 @@
 
     <!-- Main content start -->
     <section class="jumbotron bg-secondary text-center">
-      <h1 class="display-4 mb-3">Rendra Kusuma B.</h1>
+      <h1 class="display-4 mb-3"><span class="anim"></span></h1>
       <img
         src="img/kanye.jpg"
         alt="Kanye East"
@@ -83,7 +86,7 @@
       <div class="container">
         <div class="row text-center mb-4">
           <div class="col">
-            <h2>A little bit about myself</h2>
+            <h2>A Little Bit About Myself</h2>
           </div>
         </div>
         <div class="row text-center justify-content-center">
@@ -127,7 +130,7 @@
       <div class="container">
         <div class="row justify-content-evenly">
           <div class="col-md-3">
-            <div class="card mb-5">
+            <div class="card mb-5 titl1">
               <img
                 src="img/1.png"
                 class="card-img-top"
@@ -147,7 +150,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card mb-5">
+            <div class="card mb-5 titl2">
               <img
                 src="img/2.png"
                 class="card-img-top"
@@ -183,7 +186,7 @@
       <div class="container">
         <div class="row text-center mb-4">
           <div class="col">
-            <h2>Contact me</h2>
+            <h2>Contact Me</h2>
           </div>
         </div>
       </div>
@@ -240,5 +243,15 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Typed.js -->
+    <script>
+      var typed = new Typed(".anim", {
+        strings: [`Rendra Kusuma B. ^1000`],
+        typeSpeed: 40,
+        backSpeed: 40,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
