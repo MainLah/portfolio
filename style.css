@@ -1,0 +1,18 @@
+.jumbotron {
+  color: #212529;
+  padding-top: 8rem;
+}
+
+.project-h2 {
+  padding-top: 6rem;
+}
+
+footer {
+  color: #ffffff;
+  height: 6rem;
+  margin: 0;
+}
+
+footer h4 {
+  padding-top: 2rem;
+}
