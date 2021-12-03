@@ -16,3 +16,12 @@ footer {
 footer h4 {
   padding-top: 2rem;
 }
+
+.github-link {
+  color: hsl(0, 0%, 100%);
+  transition: color 0.2s;
+}
+
+.github-link:hover {
+  color: hsl(0, 0%, 60%);
+}
