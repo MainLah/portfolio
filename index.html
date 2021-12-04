@@ -66,13 +66,14 @@
     <!-- Main content start -->
     <section class="jumbotron bg-secondary text-center">
       <h1 class="display-4 mb-3"><span class="anim"></span></h1>
-      <img
-        src="img/kanye.jpg"
-        alt="Kanye East"
-        width="200"
-        class="rounded-circle"
-      />
-
+      <div class="container">
+        <img
+          src="img/kanye.jpg"
+          alt="Kanye East"
+          width="200"
+          class="rounded-circle border border-dark img-tilt"
+        />
+      </div>
       <p class="lead mt-3">Programmer | Gamer | Musician</p>
       <div id="link-about"></div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -133,8 +134,8 @@
       </div>
       <div class="container">
         <div class="row justify-content-evenly">
-          <div class="col-md-3">
-            <div class="card mb-5 titl1">
+          <div class="col-md-3 col-lg-4">
+            <div class="card mb-5 project-card">
               <img
                 src="img/1.png"
                 class="card-img-top"
@@ -147,14 +148,14 @@
                 </p>
                 <a
                   href="https://github.com/MainLah/Big-Wood-Discord-Bot"
-                  class="btn btn-primary"
+                  class="btn btn-primary project-button"
                   >Repository</a
                 >
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card mb-5 titl2">
+          <div class="col-md-3 col-lg-4">
+            <div class="card mb-5 project-card">
               <img
                 src="img/2.png"
                 class="card-img-top"
@@ -167,7 +168,7 @@
                 </p>
                 <a
                   href="https://mainlah.github.io/main-english"
-                  class="btn btn-primary"
+                  class="btn btn-primary project-button"
                   >Website</a
                 >
               </div>
@@ -196,7 +197,7 @@
       </div>
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-8">
+          <div class="col-md-8 col-lg-10">
             <form>
               <div class="form-floating mb-3">
                 <input
@@ -260,6 +261,24 @@
         typeSpeed: 40,
         backSpeed: 40,
         loop: true,
+      });
+    </script>
+
+    <!-- Tilt.js -->
+    <script type="text/javascript" src="lib/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".project-card"), {
+        max: 20,
+        speed: 400,
+        reverse: true,
+        glare: true,
+        "max-glare": 0.3,
+      });
+      VanillaTilt.init(document.querySelectorAll(".img-tilt"), {
+        max: 20,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.3,
       });
     </script>
   </body>
