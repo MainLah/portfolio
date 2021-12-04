@@ -267,19 +267,25 @@
     <!-- Tilt.js -->
     <script type="text/javascript" src="lib/vanilla-tilt.min.js"></script>
     <script type="text/javascript">
-      VanillaTilt.init(document.querySelectorAll(".project-card"), {
-        max: 20,
-        speed: 400,
-        glare: true,
-        "max-glare": 0.3,
-      });
-      VanillaTilt.init(document.querySelectorAll(".img-tilt"), {
-        max: 20,
-        speed: 400,
-        reverse: true,
-        glare: true,
-        "max-glare": 0.3,
-      });
+      console.log(screen.width);
+      if (screen.width > 1000) {
+        VanillaTilt.init(document.querySelectorAll(".project-card"), {
+          max: 20,
+          speed: 400,
+          glare: true,
+          "max-glare": 0.3,
+        });
+        VanillaTilt.init(document.querySelectorAll(".img-tilt"), {
+          max: 20,
+          speed: 400,
+          reverse: true,
+          glare: true,
+          "max-glare": 0.3,
+        });
+      }
     </script>
+
+    <!-- My own script -->
+    <script src="script.js"></script>
   </body>
 </html>
