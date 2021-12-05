@@ -8,7 +8,7 @@ function scrollAnim() {
   const interval = setInterval(() => {
     navbar.classList.remove("navbar-animate");
     clearInterval(interval);
-  }, 500);
+  }, 450);
   window.removeEventListener("scroll", scrollAnim);
 }
 
