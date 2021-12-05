@@ -1,12 +1,40 @@
+/* Navbar */
+.navbar-pc {
+  height: 80px;
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar-animate {
+  height: 80px;
+  background: rgba(0, 0, 0, 0) !important;
+  animation-name: scroll;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+}
+
+@keyframes scroll {
+  from {
+    height: 80px;
+    background: rgba(0, 0, 0, 0);
+  }
+  to {
+    height: 56px;
+    background: #212529 !important;
+  }
+}
+
+/* Jumbotron */
 .jumbotron {
   color: #212529;
   padding-top: 8rem;
 }
 
+/* Project */
 .project-h2 {
   padding-top: 6rem;
 }
 
+/* Footer */
 footer {
   color: #ffffff;
   height: 6rem;
@@ -24,4 +52,7 @@ footer h4 {
 
 .github-link:hover {
   color: hsl(0, 0%, 60%);
+}
+
+@media screen and (min-width: 1000px) {
 }
