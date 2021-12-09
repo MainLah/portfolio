@@ -5,9 +5,8 @@ window.addEventListener("scroll", scrollAnim);
 function scrollAnim() {
   navbar.classList.remove("navbar-pc");
   navbar.classList.add("navbar-animate");
-  const interval = setInterval(() => {
+  setTimeout(() => {
     navbar.classList.remove("navbar-animate");
-    clearInterval(interval);
   }, 150);
   window.removeEventListener("scroll", scrollAnim);
 }
