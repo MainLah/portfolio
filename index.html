@@ -26,6 +26,14 @@
     <title>Rendra Kusuma</title>
   </head>
   <body>
+    <!-- Splash screen start -->
+    <div class="splash hidden" id="splash">
+      <h1 style="color: #fff">
+        <span class="anim2"></span>
+      </h1>
+    </div>
+    <!-- Splash screen end -->
+
     <!-- Nav bar start -->
     <section id="navbar">
       <nav
@@ -265,6 +273,10 @@
         typeSpeed: 40,
         backSpeed: 40,
         loop: true,
+      });
+      var typed2 = new Typed(".anim2", {
+        strings: [`Welcome to my Portfolio.`],
+        typeSpeed: 20,
       });
     </script>
 

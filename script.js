@@ -1,6 +1,16 @@
 const navbar = document.getElementById("navbar-id");
+const splash = document.getElementById("splash");
 
 window.addEventListener("scroll", scrollAnim);
+
+window.onload = () => {
+  if (window.scrollY == 0) {
+    splash.classList.remove("hidden");
+    setTimeout(() => {
+      splash.classList.add("hidden");
+    }, 2950);
+  }
+};
 
 function scrollAnim() {
   navbar.classList.remove("navbar-pc");
