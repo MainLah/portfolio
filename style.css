@@ -65,6 +65,47 @@
   padding-top: 8rem;
 }
 
+/* about */
+.blob-svg-about {
+  width: 50%;
+  position: absolute;
+  z-index: -5;
+  transform: translate(50%, -7.5%);
+  opacity: 0.3;
+}
+
+#h2-about {
+  margin-top: 100px;
+}
+
+.p-about {
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .blob-svg-about {
+    width: 90%;
+    transform: translate(10%, 5%);
+  }
+}
+
+/* Contact */
+.blob-svg-contact {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  z-index: -5;
+  transform: translate(50%, 0);
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 500px) {
+  .blob-svg-contact {
+    width: 90%;
+    transform: translate(10%, 5%);
+  }
+}
+
 /* Project */
 .project-h2 {
   padding-top: 6rem;
