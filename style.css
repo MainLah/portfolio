@@ -75,7 +75,7 @@
 }
 
 #h2-about {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .p-about {
@@ -103,6 +103,12 @@
   .blob-svg-contact {
     width: 90%;
     transform: translate(10%, 5%);
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .blob-svg-contact {
+    transform: translate(10%, -5%)
   }
 }
 
