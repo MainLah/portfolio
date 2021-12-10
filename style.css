@@ -75,11 +75,11 @@
 }
 
 #h2-about {
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 .p-about {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 @media screen and (max-width: 500px) {
@@ -108,7 +108,7 @@
 
 @media screen and (min-width: 1500px) {
   .blob-svg-contact {
-    transform: translate(10%, -5%)
+    transform: translate(75%, -5%)
   }
 }
 
