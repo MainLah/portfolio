@@ -89,6 +89,13 @@
   }
 }
 
+@media screen and (min-width: 1500px) {
+  .blob-svg-about {
+    width: 90%;
+    transform: translate(10%, 10%);
+  }
+}
+
 /* Contact */
 .blob-svg-contact {
   width: 50%;
@@ -108,7 +115,7 @@
 
 @media screen and (min-width: 1500px) {
   .blob-svg-contact {
-    transform: translate(75%, -5%)
+    transform: translate(50%, -5%)
   }
 }
 
